@@ -17,6 +17,25 @@ export default {
   components: {
     ProjectCard,
   },
+  data: function () {
+    return {
+      projects: [
+        {
+          name: null,
+          liveLink: null,
+          repoLink: null,
+          image: null,
+          decription: null,
+        },
+        {
+
+        },
+        {
+
+        },
+      ],
+    };
+  },
 };
 </script>
 
