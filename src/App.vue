@@ -1,11 +1,13 @@
 <template>
   <div id="app">
+    <div>
+
+    </div>
     <ProjectCard name="Test Name"
                  liveLink="link"
                  repoLink="link"
                  image="image"
-                 description="This is an app"
-        />
+                 description="This is an app"/>
   </div>
 </template>
 
