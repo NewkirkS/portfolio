@@ -1,13 +1,14 @@
 <template>
   <div id="app">
-    <div>
-
+    <div class='project-container'>
+      <ProjectCard v-for="(project) in projects"
+              :key="project.id"
+              :name="project.name"
+              :liveLink="project.liveLink"
+              :repoLink="project.repoLink"
+              :image="project.image"
+              :description="project.description"/>
     </div>
-    <ProjectCard name="Test Name"
-                 liveLink="link"
-                 repoLink="link"
-                 image="image"
-                 description="This is an app"/>
   </div>
 </template>
 
@@ -23,25 +24,28 @@ export default {
     return {
       projects: [
         {
-          name: null,
-          liveLink: null,
-          repoLink: null,
-          image: null,
-          decription: null,
+          id: 1,
+          name: 'Project One',
+          liveLink: 'https://github.com/NewkirkS/portfolio',
+          repoLink: 'https://github.com/NewkirkS/portfolio',
+          image: './assets/logo.png',
+          description: 'This is the description of the application. It has multiple features.',
         },
         {
-          name: null,
-          liveLink: null,
-          repoLink: null,
-          image: null,
-          decription: null,
+          id: 2,
+          name: 'Project Two',
+          liveLink: 'https://github.com/NewkirkS/portfolio',
+          repoLink: 'https://github.com/NewkirkS/portfolio',
+          image: './assets/logo.png',
+          description: 'This is the description of the application. It has multiple features.',
         },
         {
-          name: null,
-          liveLink: null,
-          repoLink: null,
-          image: null,
-          decription: null,
+          id: 3,
+          name: 'Project Three',
+          liveLink: 'https://github.com/NewkirkS/portfolio',
+          repoLink: 'https://github.com/NewkirkS/portfolio',
+          image: './assets/logo.png',
+          description: 'This is the description of the application. It has multiple features.',
         },
       ],
     };
