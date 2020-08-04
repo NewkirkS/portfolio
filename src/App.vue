@@ -28,7 +28,7 @@ export default {
           name: 'Project One',
           liveLink: 'https://github.com/NewkirkS/portfolio',
           repoLink: 'https://github.com/NewkirkS/portfolio',
-          image: './assets/logo.png',
+          image: 'logo.png',
           description: 'This is the description of the application. It has multiple features.',
         },
         {
@@ -36,7 +36,7 @@ export default {
           name: 'Project Two',
           liveLink: 'https://github.com/NewkirkS/portfolio',
           repoLink: 'https://github.com/NewkirkS/portfolio',
-          image: './assets/logo.png',
+          image: 'logo.png',
           description: 'This is the description of the application. It has multiple features.',
         },
         {
@@ -44,7 +44,7 @@ export default {
           name: 'Project Three',
           liveLink: 'https://github.com/NewkirkS/portfolio',
           repoLink: 'https://github.com/NewkirkS/portfolio',
-          image: './assets/logo.png',
+          image: 'logo.png',
           description: 'This is the description of the application. It has multiple features.',
         },
       ],

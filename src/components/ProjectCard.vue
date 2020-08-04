@@ -1,7 +1,7 @@
 <template>
   <div class="flex">
     <div>
-      <img :src="image" alt="project-image" >
+      <img :src="imagePath" alt="project-image" >
     </div>
     <div>
       <h1>{{name}}</h1>
@@ -19,6 +19,13 @@ export default {
     repoLink: String,
     image: String,
     description: String,
+    staticImagePath: String,
+  },
+  computed: {
+    imagePath() {
+      // eslint-disable-next-line global-require, import/no-dynamic-require
+      return require(`../assets/${this.image}`);
+    },
   },
 };
 </script>
